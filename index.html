@@ -24,8 +24,9 @@
 
 		.margin30{margin:0; margin-top: 30px;}
 		.margin110{margin:0; margin-top:110px; }
+		.width1000{width:1000px;}
 		.information {height:1280px; margin:0; background-color: lightgray;}
-		.contest {width:900px; height:1080px; margin:auto; margin-top: 100px;background-color: green;}
+		.contest {height:1080px; margin:auto; margin-top: 100px; background-color: green;}
 		.recipe {width:800px; height:1080px; margin:auto; margin-top: 100px;background-color: gray;}
 		.booth {width:900px; height:1080px; margin:auto; margin-top: 100px;background-color: green;}
 		.back {width:240px; height:280px; margin:11px;  background-color: rgba(0,0,0,0);}
@@ -37,7 +38,7 @@
 		.navbutton{width:210px; height:180px; margin:0; margin-right:4px; background-color: white; opacity: 0; border-radius: 3px;} 
 		.navbutton:hover {opacity: 50;background-color: rgba(255,255,255,0);}
 		
-		.midwidth{width:300px; margin:50px;}
+		
 		.width30{width:30%;}
 		.width900{width:900px;}
 		.white{color:white;}
@@ -56,7 +57,7 @@
 		.typep2{font-size:25px; line-height:32px; color:white; font-weight:500; }
 		.ui{height: 100px; margin-left:20%; margin-right:20%; margin-top: 50px; background-color: rgba(255,255,255,0.3);}
 		.between{margin-top:50px;}
-		html,body,header,div,nav{margin:0; scroll-behavior: smooth;}
+		html,body,header,div,nav,img{margin:0; scroll-behavior: smooth;}
 		div,nav{margin:auto;}
 		nav{margin: auto }
 		h1{font-family: sandoll-andante, sans-serif; font-style: normal; font-weight: 400; margin:auto; position: 50%;text-align: center; padding-top: 410px; padding-bottom:30px; color:white; font-size:70px;}
@@ -68,7 +69,7 @@
 		li, a {padding-top:40px; display: block; text-decoration: none; list-style: none; color:white;}
 		b{width:20%; height:100%; text-decoration: none; list-style: none; color:black;padding-bottom:20px; background-color:green;}
 		ul{ height:30px; background-color: blue;}
-		img{display: block;}
+		img{display: block; margin-top:20px; margin-bottom: 20px;}
 	</style>
 </head>
 <body>
@@ -85,44 +86,45 @@
 		
 		<div class="absolute" style="top:860px; left:50%; margin-left:-425px">
 			<div class="flex">
-			<div class="navbutton greenbutton">
-				<li><a href="#information"> 정보 </a></li>
+				<div class="navbutton greenbutton">
+					<li><a href="#information"> INFO </a></li>
+				</div>
+				<div class="navbutton purplebutton">
+					<li><a href="#contest"> FEEL THE EAT </a></li>	
+				</div>
+				<div class="back navbutton pinkbutton">
+					<li><a href="#recipe">Recipe</a></li>
+				</div>
+				<div class="navbutton blackbutton">
+					<li><a href="#booth">제철 감정</a></li>
+				</div>
 			</div>
-			<div class="navbutton purplebutton">
-				<li><a href="#contest"> 콘테스트 </a></li>	
-			</div>
-			<div class="back navbutton pinkbutton">
-				<li><a href="#recipe"> 우승 레시피</a></li>
-			</div>
-			<div class="navbutton blackbutton">
-				<li><a href="#booth"> 부스 </a></li>
-			</div>
-		</div>
 		</div>
 	</nav>
 	
 		<ul class="flex sticky ui">
 			<div>
-				<li class="reset"><a href="#nav" class="reset"><b> 홈</b> </a></li>
+				<li class="reset"><a href="#nav" class="reset"><b>HOME</b> </a></li>
 			</div>
 			<div>
-				<li class="reset"><a href="#information" class="reset"><b> 정보</b> </a></li>
+				<li class="reset"><a href="#information" class="reset"><b>INFO</b> </a></li>
 			</div>
 			<div>
-				<li class="reset"><a href="#contest" class="reset"><b> 콘테스트</b> </a></li>
+				<li class="reset"><a href="#contest" class="reset"><b> FEEL THE EAT</b> </a></li>
 			</div>
 			<div>
-				<li class="reset"><a href="#recipe" class="reset"><b> 레시피</b> </a></li>
+				<li class="reset"><a href="#recipe" class="reset"><b>Recipe</b> </a></li>
 			</div>
 			<div>
-				<li class="reset"><a href="#booth" class="reset"><b> 부스</b> </a></li>
+				<li class="reset"><a href="#booth" class="reset"><b>제철 감정</b> </a></li>
 			</div>
 		</ul>
 
 		<div class="information" id="information">
-			
-			<h3>What's MOOD CHANGER?</h3>
-			<h3 class="reset">MOOD CHANGER란?</h3>
+			<div class="width1000">
+				<h3>What's MOOD CHANGER?</h3>
+				<h3 class="reset">MOOD CHANGER란?</h3>
+			</div>
 			<div class="between">
 				<p>잔잔한 일상에 강렬한 자극이 필요한가요? </p>
 				<p>슬럼프에 빠진 당신, 창작물에 새로운 영감이 필요한가요?</p> 
@@ -137,14 +139,24 @@
 		<div class="contest" id="contest">
 			<h3>FEEL THE EAT</h3>
 			<h3 class="reset">요리 콘테스트</h3>
-			<p>여기, 스페이스 온실에는 실존하는 모든 감정이 있습니다. 이 마법의 재료를 이용해 놀라운 맛을 만들어 보세요. 16회의 주제는 아래와 같습니다.</p>
-			<h2>전식: 톡톡 튀는 요리</h2>
-			<h2>본식: 가장 격렬한 요리</h2>
-			<h2>후식: 가장 비현실적인 요리</h2>
+			<div class="between width1000">
+				<div>
+					<p>2년마다 한 번씩 열리는 Feel the Eat이 벌써 16회를 맞이했습니다.</p>
+					<p>올해에는 새로 개발된 품종이 추가되어 더욱 다채롭고 구체적인 감정을 만들 수 있게 되었습니다.</p>
+				</div>
+				<div class="between">
+					<p>날짜: 2049. Oct. 16-18 오전 11시~ 오후 4시</p>
+					<p>장소: 스페이스 온실</p>
+				</div>
+				<img src="지도 이미지">
+				<p>버스: 42.309번 스페이스 온실 역 하차, 도보 15분</p>
+				<p>지하철: 녹색선 스페이스 온실 역 하차, 도보 7분</p>
+
 			<div class="width900 flex">
 			<p class=" width30">1등: 미식 레시피 책 발간 지원, 온실 평생 자유 이용권, 상금 30,000달러</p>
 			<p class=" width30">2등: 온실 1년 자유 이용권, 상금 7,000달러</p>
 			<p class=" width30">3등: 협찬 조리도구 증정, 상금 500달러</p>
+		</div>
 		</div>
 		</div>
 		<div class="recipe" id="recipe">
